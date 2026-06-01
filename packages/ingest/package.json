@@ -1,0 +1,24 @@
+{
+  "name": "@pg/ingest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx --env-file=../../.env src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pg/core": "workspace:*",
+    "@pg/db": "workspace:*",
+    "@pg/shared": "workspace:*",
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/xml2js": "^0.4.14",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
+  }
+}

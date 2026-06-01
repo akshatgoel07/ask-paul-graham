@@ -24,7 +24,7 @@ model Essay {
 /// A chunk of an essay. The vector lives in Qdrant (keyed by `id`); Postgres is
 /// the durable source of truth for the text + metadata.
 model Chunk {
-  id          String   @id @default(cuid())
+  id          String   @id @default(uuid()) // UUID so it can be a Qdrant point id
   essayId     Int
   essay       Essay    @relation(fields: [essayId], references: [id], onDelete: Cascade)
   index       Int // position of the chunk within the essay
