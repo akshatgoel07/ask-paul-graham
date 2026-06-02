@@ -1,4 +1,4 @@
-# paul-g-embeddings
+# Ask Paul Graham
 
 A Retrieval-Augmented Generation (RAG) system that builds a **Paul Graham persona** — ask
 questions and get answers grounded in his actual essays, in his voice, with citations.
